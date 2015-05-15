@@ -743,7 +743,7 @@ if ( ! class_exists( 'JSL3_Facebook_Wall_Feed' ) ) {
 
             $dialog_url =
                 "http://www.facebook.com/dialog/oauth?" .
-                "scope=user_groups,friends_groups,read_stream,offline_access,manage_pages,user_status&" .
+                "scope=user_groups,read_stream,manage_pages,user_status&" .
                 "client_id=" . $dev_options[ 'app_id' ] . "&state=$session&" .
                 "redirect_uri=" . get_bloginfo('wpurl') .
                 "/wp-admin/admin.php?page=" . JSL3_FWF_SLUG;
